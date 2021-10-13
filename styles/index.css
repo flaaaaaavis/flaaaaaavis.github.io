@@ -17,7 +17,6 @@ a {
 body {
     height: 100%;
     width: 100%;
-    padding: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -34,6 +33,10 @@ header {
     background-color: khaki;
 }
 
+img {
+    padding-top: 10px;
+}
+
 #footer {
     width: 100%;
     height: 100%;
@@ -45,18 +48,17 @@ header {
 nav  {
     width: 200px;
     height: 100%;
-    background-color: thistle;
+    border-right: 2px solid rgb(175, 175, 175);
 }
 
 main {
     width: 600px;
     text-align: left;
-    background-color: tan;
 }
 
 aside {
     width: 200px;
     height: 100%;
     text-align: center;
-    background-color: thistle;
+    border-left: 2px solid rgb(175, 175, 175);
 }
