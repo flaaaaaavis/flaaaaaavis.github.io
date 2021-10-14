@@ -24,7 +24,7 @@ body {
 
 header {
     width: 100%;
-    height: 80px;
+    height: 100px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -33,8 +33,8 @@ header {
     background-color: khaki;
 }
 
-img {
-    padding-top: 10px;
+.logo-alpha {
+    margin-top: 20px;
 }
 
 #footer {
@@ -61,4 +61,19 @@ aside {
     height: 100%;
     text-align: center;
     border-left: 2px solid rgb(175, 175, 175);
+}
+
+.sociais {
+    width: 15px;
+    height: 15px;
+}
+
+button {
+    width: 100px;
+    height: 25px;
+    color: blanchedalmond;
+    background-color: grey;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
 }
