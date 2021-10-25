@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Canvas</title>
+</head>
+<body>
+    <canvas id="canvas" width="1320px" height="600px" style="border: 1px solid red;">Seu browser não suporta esse elemento html.</canvas>
+
+    <script>
+        var c=document.getElementById("canvas");
+        var ctx = c.getContext("2d");
+        ctx.beginPath();
+        ctx.arc(300,300,200,0,2*Math.PI);
+        
+        ctx.arc(200,250,30,0,2*Math.PI);
+
+        ctx.arc(400,250,30,0,2*Math.PI);
+
+        ctx.stroke();
+        
+    </script>
+</body>
+</html>

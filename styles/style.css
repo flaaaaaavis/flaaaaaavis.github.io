@@ -1,0 +1,11 @@
+a[href] {
+    text-decoration: underline;
+}
+
+#identificador .exemplo h2[class="atributo"] {
+    color: blue;
+}
+
+main p::first-letter {
+    font-size: 150%;
+}
