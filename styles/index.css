@@ -91,6 +91,11 @@ nav ul li a, nav ul li ul a {
     background: #fff;
 }
 
+/* Fix IE. Hide from IE Mac \*/
+* html ul li { float: left; }
+* html ul li a { height: 1%; }
+/* End */
+
 nav li:hover ul {
     display: block; 
 }
