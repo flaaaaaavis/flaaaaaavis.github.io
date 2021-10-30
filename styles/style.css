@@ -9,3 +9,10 @@ a[href] {
 main p::first-letter {
     font-size: 150%;
 }
+
+ul.a {
+    font-size: 130%;
+    margin-left: 20px;
+    list-style-position: inside;
+    list-style-image: url("check.png");
+}

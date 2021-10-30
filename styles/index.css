@@ -31,7 +31,13 @@ header {
     justify-content: space-around;
     align-items: center;
     margin-bottom: 20px;
-    background-color: khaki;
+    background-color: #d5d8b5;
+}
+
+header a {
+    color: #0d7366;
+    line-height: 16px;
+    font-family: Poppins;
 }
 
 .logo-alpha {
@@ -57,6 +63,10 @@ main {
     text-align: left;
 }
 
+main a {
+    margin-left: 30px;
+}
+
 aside {
     width: 200px;
     height: 100%;
@@ -67,7 +77,6 @@ aside {
 button {
     width: 100px;
     height: 25px;
-    color: blanchedalmond;
     background-color: grey;
     border: none;
     border-radius: 5px;
@@ -104,4 +113,10 @@ footer {
     height: 25px;
     justify-content: center;
     align-items: center;
+}
+
+p {
+    margin-left: 30px;
+    text-indent: 30px;
+    text-align: justify;
 }

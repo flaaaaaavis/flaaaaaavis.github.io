@@ -1,0 +1,37 @@
+#container-1 {
+    width: 200px;
+    height: 200px;
+    border: 1px dashed;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container-2 {
+    width: 400px;
+    height: 150px;
+    border: 1px dashed;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container-3 {
+    width: 150px;
+    height: 300px;
+    border: 1px dashed;
+
+    display: flex;
+    flex-direction: column;
+}
+
+#container-4 {
+    width: 400px;
+    height: 150px;
+    border: 1px dashed;
+
+    display: flex;
+    flex-direction: row;
+}

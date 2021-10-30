@@ -1,0 +1,11 @@
+p a:visited {
+    color: purple;
+}
+
+p a:focus {
+    background-color: #d5d8b5;
+}
+
+p a:active {
+    color: red;
+}

@@ -1,0 +1,36 @@
+.box {
+
+    background-color: rgba(128, 128, 128, 0.376);
+    border-radius: 5px;
+
+    margin-left: 45px;
+    width: 450px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.box>* {
+    flex: 1 1 160px;
+}
+
+
+.box div {
+    margin: 10px;
+}
+
+.box div input{
+    outline: none;
+
+    height: 20px;
+    border-radius: 5px;
+}
+
+.box div .curto {
+    width: 200px;
+}
+
+.box div .longo {
+    width: 425px;
+}

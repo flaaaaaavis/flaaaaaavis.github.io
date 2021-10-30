@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+
+        <meta property="og:title" content="Repositório de Estudos" />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content="https://flaaaaaavis.github.io" />
+        <meta property="og:description" content="Flávia Souza | Estudo de Front-end" />
+        <meta property="og:image" content="https://alphalumen.org.br/wp-content/uploads/2020/05/imagem-site-ial-01.jpg" />
+
+        <link rel="shortcut icon" href="./media/icon.png" type="image/icon">
+        <link rel="stylesheet" href="./styles/index.css">
+        <link rel="stylesheet" href="./styles/cores.css">
+        <title>Repositório de Estudos</title>
+
+        <style>
+            ul {
+                list-style-type: none;
+                text-indent: 30px;
+            }
+
+            div {
+                margin-left: 30px;
+            }
+        </style>
+
+    </head>
+    <body>
+        <header>
+            <img id="logo-alpha" src="https://alphalumen.org.br/wp-content/uploads/2020/06/ial-logo.png" alt="Logomarca do Instituto Alpha Lumen" width="300px" height="70px">
+            <a href="redes.html">Entendendo a Internet</a>
+            <a href="git-github.html">Git e GitHub</a>
+            <a href="front-end.html">Front-end</a>
+        </header>
+
+        <div class="middle">
+
+            <nav>
+                <h3>CSS</h3>
+                <br />
+                &nbsp;&nbsp;&nbsp;
+                <a href="css-selectors.html">Seletores</a>
+                <br />
+                &nbsp;&nbsp;&nbsp;
+                <a href="css-fontes.html">Fontes</a>
+                <br />
+                &nbsp;&nbsp;&nbsp;
+                <a href="css-cores.html">Cores</a>
+                <br />
+                &nbsp;&nbsp;&nbsp;
+                <a href="flex-box.html">Flex-box</a>
+                <br />
+                &nbsp;&nbsp;&nbsp;
+                <a href=""></a>
+                <br />
+                &nbsp;&nbsp;&nbsp;
+                <a href=""></a>
+                <br />
+                &nbsp;&nbsp;&nbsp;
+                <a href=""></a>
+                <br />
+            </nav>
+
+            <main>
+                <h1>Cores</h1>
+                <hr>
+
+                <br />
+                <div style="text-align: center; background-color: rgba(128, 128, 128, 0.5); border-radius: 20px;">
+                    <br />
+                    <img src="./media/rodadecores3.png.crdownload" alt="Círculo Cromático" style=" width:400px; height:400px;">
+                    <p>Círculo Cromático</p>
+                    <br />
+                </div>
+
+                <br />
+                <h2>Grupos de cores</h2>
+                    <div>
+                        <h3>Cores primárias</h3>
+                        <ul>
+                            <li>Vermelho</li>
+                            <li>Azul</li>
+                            <li>Amarelo</li>
+                        </ul>
+
+                        <h3>Cores secundárias</h3>
+                        <ul>
+                            <li>Verde</li>
+                            <li>Laranja</li>
+                            <li>Roxo</li>
+                        </ul>
+                        <h3>Cores terciárias</h3>
+                            <p>São resultado da soma entre uma cor primária e uma secundária</p>
+                    </div>
+
+                <br />
+                <h2>Relação entre cores</h2>
+                    <div>
+
+                        <br />
+                        <h3>Cores Complementares</h3>
+                            <p>A cor complementar de uma primária é a soma das duas outras primárias em proporções iguais, ou seja, uma cor secundária. São as combinações que tem mais contraste: vermelho e verde, azul e laranja e amarelo e violeta. Para encontrá-las, no círculo cromático, é só verificar aquela a cor que está na posição diretamente oposta a cor escolhida.</p>
+
+                        <br />
+                        <h3>Cores Análogas</h3>
+                            <p>É uma combinação com três cores consecutivas ( vizinhas) no círculo de cores. Normalmente é composta por uma cor primária e suas adjacentes. Como as cores tem a mesma base, essa é uma composição de pouco contraste.</p>
+                    </div>
+
+                <br />    
+                <h2>Cores em CSS</h2>
+                    <div>
+                        <br />
+                        <h3 id="a">Hexadecimal</h3>
+                            <br />
+                            <p>Utiliza como base o sistema de numeração hexadecimal, que é composto pelabase do sistema numérico tradicional (0123456789) acrescido de ABCDEF. Ou seja, o alfabeto hexadecimal é <strong>0123456789ABCDEF</strong>.</p>
+                            <p>No CSS, a utilização mais comum do sistema hexadecimal é para representar o código de cores RGB (Red, green, blue) través do uso de três pares de caracteres, onde cada par representa uma das cores do RGB: #RRGGBB, assumindo valores entre 00 (ausência de cor) e FF (máximo de cor).</p>
+                            <p>Entretanto, é importante salientar que os níveis de presença de cada cor devem ser interprados segundo a perspectiva do estulo de espectros de luz, pois é assim que nossos dispozitivos produzem as cores que nós visualizamos.</p>
+                            <p>Ou seja, o valor máximo de cor "#FFFFFF" representa a cor branca, e o valor mínimo de cor "#000000" representa o preto.</p>
+
+                        <br />
+                        <h3 id="b">Hexadecimal com transparência</h3>
+                        <br />
+                        <p></p>
+
+                        <br />
+                        <h3 id="c">RGB</h3>
+                        <br />
+                        <p>Esse sistema de cores compreende 16.8 milhões de cores distintas, que são formadas através da junção dos canais de cores vermelho, verde e azul.</p>
+                        <p>Além de ser comumente representado através do sistema hexadecimal, o RGB é amplamente utilizado na sua forma mais comum, "R, G, B", onde cada um dos caracteres representa um canal de cor cujo valor varia entre 0 e 255 para combinar diferentes tons de vermelho, verde e azul para formar a cor desejada.</p>
+                        <p>Como resultado, tem-sem um total de 16.777.216 cores distintas.</p>
+                        
+
+                        <br />
+                        <h3 id="d">RGBA</h3>
+                        <br />
+                        <p></p>
+
+                        <br />
+                        <h3 id="e">HSL</h3>
+                        <br />
+                        <p></p>
+
+                        <br />
+                        <h3 id="f">HSLA</h3>
+                        <br />
+                        <p></p>
+
+                        <br />
+                        <h3 id="g">Cor predefinida pelos browsers</h3>
+                        <br />
+                        <p></p>
+
+                        <br />
+                        <h3 id="h">Cor atual do elemento</h3>
+                        <br />
+                        <p></p>
+
+                    </div>
+
+                <br /><br />
+                <h2>Referências</h2><br />
+                    <a href="https://uxdesign.cc/turning-color-theory-into-css-a-quick-dive-7c6e485ac701">https://uxdesign.cc/turning-color-theory-into-css-a-quick-dive-7c6e485ac701</a><br />
+                    <a href="https://www.youtube.com/watch?v=Iu8Q2u17hVs">https://www.youtube.com/watch?v=Iu8Q2u17hVs</a><br />
+                    <a href="https://www.maujor.com/tutorial/css3-modulo-para-cores.php">https://www.maujor.com/tutorial/css3-modulo-para-cores.php</a><br />
+                    <a href="https://www.chiefofdesign.com.br/teoria-das-cores/">https://www.chiefofdesign.com.br/teoria-das-cores/</a>
+                    
+            </main>
+
+            <aside>
+                <h3>Dúvidas</h3>
+            </aside>
+        </div>
+        
+        <footer>
+            <button>
+                <a href="css.html">Voltar</a>
+            </button>
+
+            <span class="link-sociais">
+                <a href="https://www.instagram.com/flaaaaaavis" target="_blank">
+                    <img class="sociais" src="media/instagram.png">Instagram
+                </a>
+                <a href="https://www.linkedin.com/in/ridailda/" target="_blank">
+                    <img class="sociais" src="media/linkedin.png">LinkedIn
+                </a>
+                <a href="https://github.com/flaaaaaavis" target="_blank">
+                    <img class="sociais" src="media/github.png">GitHub
+                </a>
+            </span>
+            
+        </footer>
+
+    </body>
+</html>
