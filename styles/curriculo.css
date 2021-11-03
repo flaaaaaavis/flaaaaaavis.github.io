@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Exa:wght@300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+html {
+    font-family: 'Lexend Exa', sans-serif;
+
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    background: #cccccc;
+
+    display: flex;
+    justify-content: center;
+}
+
+body{
+    height: 1200px;
+    width: 900px;
+    background-color: #F2F2F2;
+
+    overflow-x: hidden;
+    box-shadow: 0 0.3125rem 0.35rem #555577;
+
+    display: flex;
+    flex-direction: row;
+}
+
+main {
+  padding-top: 300px;
+  padding-left: 20px;
+  height: 1200px;
+  width: 600px;
+}
+
+#education div {
+  margin-left: 15px;
+}
+
+main h4 {
+  margin-left: 15px;
+}
+
+progress {
+  margin-left: 30px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+aside {
+  padding-top: 300px;
+  padding-left: 10px;
+  margin-right: 0;
+  height: 900px;
+  width: 300px;
+  background-color: #030103;
+  color: #fff;
+}
+
+aside a {
+  display: flex;
+}
+
+aside img {
+  background-color: white;
+}
+
+#profile-box {
+  position: absolute;
+  height: 200px;
+  width: 800px;
+  margin-left: 45px;
+  margin-top: 50px;
+  border: 5px solid #E69197;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+header {
+  width: 450px;
+  height: 205px;
+  margin-left: 0;
+  background-color: #E69197;
+  z-index: 2;
+}
+
+h1 {
+  font-size: 64px;
+  font-weight: 500;
+  text-align: center;
+}
+
+h2 {
+  color: #E69197;
+}
+
+#profile-box img {
+  background-color: #fff;
+  border-radius: 60%;
+  border: 5px solid #E69197;
+  margin-left: 170px;
+}
+
+#contacts a {
+  margin-left: 30px;
+}
+
+aside div input {
+  margin-left: 30px;
+}
+
+a:hover {
+  color: cornflowerblue;
+}
+
+#sidebar {
+    position: absolute;
+    background-color: #E69197;
+    width: 15px;
+    height: 1200px;
+    top: 20px;  
+}
+
+#square {
+  position: absolute;
+  background-color: #030103ea;
+  width: 100px;
+  height: 275px;
+  z-index:1;
+}
+
+footer {
+    position: absolute;
+    top: 1175px;
+    width: 900px;
+    height: 50px;
+    background-color: #E69197;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
