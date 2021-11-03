@@ -42,8 +42,25 @@ main {
   width: 600px;
 }
 
+header p {
+  color: #2f2f2f;
+}
+
 #education div {
   margin-left: 15px;
+}
+
+#education h3 {
+  font-weight: 500;
+}
+
+#education h4 {
+  margin-left: 0px;
+  font-weight: 500;
+}
+
+#education p {
+  font-weight: 300;
 }
 
 main h4 {
@@ -52,6 +69,7 @@ main h4 {
 
 progress {
   margin-left: 30px;
+  
 }
 
 .row {
@@ -66,16 +84,12 @@ aside {
   margin-right: 0;
   height: 900px;
   width: 300px;
-  background-color: #030103;
+  background-color: #111111;
   color: #fff;
 }
 
 aside a {
   display: flex;
-}
-
-aside img {
-  background-color: white;
 }
 
 #profile-box {
@@ -105,8 +119,17 @@ h1 {
   text-align: center;
 }
 
-h2 {
+main h2 {
+  color: #727272;
+}
+
+aside h2 {
   color: #E69197;
+}
+
+aside h4 {
+  font-weight: 400;
+  margin-left: 30px;
 }
 
 #profile-box img {
@@ -138,7 +161,7 @@ a:hover {
 
 #square {
   position: absolute;
-  background-color: #030103ea;
+  background-color: #111111;
   width: 100px;
   height: 275px;
   z-index:1;
