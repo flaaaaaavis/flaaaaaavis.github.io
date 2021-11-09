@@ -63,19 +63,19 @@ header p {
   font-weight: 300;
 }
 
-main h4 {
-  margin-left: 15px;
+#education img {
+  border-radius: 5px;
 }
 
-progress {
-  margin-left: 30px;
-  
+main h4 {
+  margin-left: 15px;
 }
 
 .row {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
 }
 
 aside {
@@ -98,17 +98,19 @@ aside a {
   width: 800px;
   margin-left: 45px;
   margin-top: 50px;
+  padding: 0;
   border: 5px solid #E69197;
 
   display: flex;
   flex-direction: row;
   align-items: center;
+  z-index: 2;
 }
 
 header {
   width: 450px;
   height: 205px;
-  margin-left: 0;
+  margin-left: 0%;
   background-color: #E69197;
   z-index: 2;
 }
@@ -121,6 +123,23 @@ h1 {
 
 main h2 {
   color: #727272;
+}
+
+#professional {
+  max-width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.prof {
+  max-width: 60px;
+}
+
+#prof {
+  max-width: 90px;
 }
 
 aside h2 {
@@ -149,6 +168,43 @@ aside div input {
 
 a:hover {
   color: cornflowerblue;
+}
+
+/* Tooltip container */
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+/* Tooltip text */
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    min-width: fit-content;
+    background-color: #727272;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+  
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+/* Position tooltip */
+.tooltip .tooltiptext {
+  width: 120px;
+  top: 100%;
+  left: 50%;
+  margin-left: -60px; /* Use half of the width (120/2 = 60), to center the tooltip */
 }
 
 #sidebar {

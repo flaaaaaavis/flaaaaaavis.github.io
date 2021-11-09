@@ -1,0 +1,303 @@
+@import url(//db.onlinewebfonts.com/c/bb2e1211dfd31103079dbce7c49e1d4e?family=DINNeuzeitGroteskLTW01-BdCn);
+
+* {
+    margin: 0;
+    border: none;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+
+    color: #fff;
+}
+
+body {
+    font-family: "DINNeuzeitGroteskLTW01-BdCn";
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    position: fixed;
+
+    background-color: #02020280;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    width: 380px;
+    padding-left: 80px;
+
+    font-size: 37px;
+    color: #EEE6E6;
+}
+
+h1 span {
+    color: #A29C9C;
+}
+
+nav {
+    width: 40%;
+    padding-right: 100px;
+}
+
+nav ul {
+    list-style: none;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+nav ul li:first-child {
+    color: #fff;
+}
+
+nav ul li {
+    color: #A29C9C;
+}
+
+nav ul li:last-child {
+    color: #fff;
+}
+
+nav li:hover {
+    color: #fff;
+}
+
+aside {
+    position: fixed;
+    width: 100px;
+    height: 216.98px;
+
+    background-color: #02020280;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    top: 40%;
+    right: 0;
+}
+
+aside div {
+    height: 160px;
+    width: 100px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#chat {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+
+    width: 235.48px;
+    height: 56px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 3px 0 hsl(0deg 1% 71% / 50%);
+}
+
+section h2 {
+    font-size: 18px;
+    font-weight: 100;
+}
+
+main {
+    width: 100%;
+}
+
+main img:first-child {
+    position: relative;
+    z-index: -1;
+
+    top: 0;
+    width: 100%;
+}
+
+#grande {
+    position: absolute;
+    top: 40%;
+    text-align: center;
+
+    width: 100%;
+
+    color: #fff;
+    font-size: 96px;
+}
+
+#second {
+    width: 100%;
+    background-color: black;
+    display: flex;
+
+}
+
+#secondinho {
+    width: 50%;
+    height: 460px;
+
+    color: #fff;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#secondinho p:first-child {
+    font-size: 60px;
+}
+
+main div img {
+    max-width: 50%;
+}
+
+article {
+    min-height: 940px;
+    max-width: 100%;
+}
+
+#fourth {
+    min-height: 217px;
+    max-width: 100%;
+
+    background-color: #000;
+    text-align: center;
+    color: #fff;
+
+    display: flex;
+    flex-direction: column;
+}
+
+#fourth h2 {
+    
+    font-size: 60px;
+    letter-spacing: 0.1em;
+}
+
+#fourth h3 {
+    font-weight: lighter;
+    letter-spacing: 0.1em;
+}
+
+#row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.column h3 {
+    font-size: 31px;
+    font-weight: 100;
+}
+
+.column h3:hover {
+    background-color: ;
+}
+
+#fifth {
+    max-width: 100%;
+    height: fit-content;
+}
+
+#left {
+    max-width: 50%;
+    height: 100%;
+    z-index: 1;
+}
+
+#fifth img {
+    width: 100%;
+    z-index: -1;
+}
+
+#sixth {
+    min-height: 500px;
+    width: 100%;
+
+    background-color: #020202;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#sixth form {
+    max-width: 50%;
+} 
+
+#sixth form input {
+    width: 350px;
+
+    background-color: #fff;
+    border: 1px solid #000;
+
+    width: 400PX;
+    height: 46PX;
+    margin-right: 50px;
+}
+
+#sixth form input:last-child {
+    width: 119PX;
+    height: 46PX;
+    float: right;
+
+    background-color: #ffffff00;
+    border-color: #fff;
+}
+
+#right {
+    max-width: 50%;
+}
+
+#seventh {
+    min-height: 440px;
+    width: 100%;
+
+    background-color: #141414;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    width: 100%;
+    height: 155px;
+
+    
+    color: #fff;
+
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+    background-color: #1a1919;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer a {
+    color: #fff;
+}
