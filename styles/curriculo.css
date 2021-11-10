@@ -46,6 +46,13 @@ header p {
   color: #2f2f2f;
 }
 
+#bio p {
+  margin-left: 30px;
+  max-width: 500px;
+  text-indent: 30px;
+  text-align: justify;
+}
+
 #education div {
   margin-left: 15px;
 }
@@ -55,7 +62,6 @@ header p {
 }
 
 #education h4 {
-  margin-left: 0px;
   font-weight: 500;
 }
 
@@ -67,15 +73,11 @@ header p {
   border-radius: 5px;
 }
 
-main h4 {
-  margin-left: 15px;
-}
-
 .row {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: left;
 }
 
 aside {
@@ -135,7 +137,7 @@ main h2 {
 }
 
 .prof {
-  max-width: 60px;
+  height: 84.16px;
 }
 
 #prof {
