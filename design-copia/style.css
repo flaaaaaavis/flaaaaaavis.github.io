@@ -171,6 +171,10 @@ article {
     max-width: 100%;
 }
 
+#third img {
+    width: 33%;
+}
+
 #fourth {
     min-height: 217px;
     max-width: 100%;
@@ -210,10 +214,6 @@ article {
     font-weight: 100;
 }
 
-.column h3:hover {
-    background-color: ;
-}
-
 #fifth {
     max-width: 100%;
     height: fit-content;
@@ -231,7 +231,7 @@ article {
 }
 
 #sixth {
-    min-height: 500px;
+    min-height: 529px;
     width: 100%;
 
     background-color: #020202;
@@ -250,11 +250,12 @@ article {
     width: 350px;
 
     background-color: #fff;
-    border: 1px solid #000;
+    border: 1px solid gray;
+    margin-bottom: 5px;
 
     width: 400PX;
     height: 46PX;
-    margin-right: 50px;
+    margin-right: 100px;
 }
 
 #sixth form input:last-child {
@@ -266,8 +267,18 @@ article {
     border-color: #fff;
 }
 
+#sixth #right h2 {
+    font-size: 60px;
+    
+}
+
+#sixth #right p {
+    font-size: 22px;
+    line-height: 1.4em;
+}
+
 #right {
-    max-width: 50%;
+    max-width: 376px;
 }
 
 #seventh {
@@ -280,6 +291,42 @@ article {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+#seventh h2 {
+    font-size: 60px;
+    letter-spacing: 0.15em;
+}
+
+#seventh h3 {
+    margin-top: 5px;
+
+    font-family: Georgia, Times, serif;
+    font-size: 25px;
+    letter-spacing: 0.15em;
+    font-weight: 200;
+}
+
+#seventh input:first-child {
+    width: 533px;
+    height: 41px;
+
+    background-color: #141414;
+    border: 2px solid white;
+    margin-top: 70px;
+}
+
+#seventh input:first-child::placeholder {
+    padding-left: 3px;
+}
+
+#seventh input:last-child {
+    width: 119px;
+    height: 41px;
+
+    background-color: #141414;
+    border: 2px solid white;
+    margin-top: 70px;
 }
 
 footer {
