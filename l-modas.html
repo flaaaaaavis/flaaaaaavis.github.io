@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="styles/l-modas.css">
+
+        <title>L Modas</title>
+    </head>
+
+    <body>
+
+        <main>
+
+            <div class="star-source">
+                <svg>
+                    <linearGradient x1="50%" y1="5.41294643%" x2="87.5527344%" y2="65.4921875%" id="grad">
+                        <stop stop-color="#bf209f" offset="0%"></stop>
+                        <stop stop-color="#d62a9d" offset="60%"></stop>
+                        <stop stop-color="#ED009E" offset="100%"></stop>
+                    </linearGradient>
+                    <symbol id="star" viewBox="153 89 106 108">   
+                        <polygon id="star-shape" stroke="url(#grad)" stroke-width="5" fill="currentColor" points="206 162.5 176.610737 185.45085 189.356511 150.407797 158.447174 129.54915 195.713758 130.842203 206 95 216.286242 130.842203 253.552826 129.54915 222.643489 150.407797 235.389263 185.45085"></polygon>
+                    </symbol>
+                </svg>
+            </div>
+
+            <form id="formulario">
+                <h2>Avalie sua experiência!</h2>
+
+                <input name="email" id="email" type="email" placeholder="Digite seu e-mail" required>
+
+                <ol>
+                    <li>
+                        <h3>Quanto você recomendaria nossos produtos para um amigo ou familiar?</h3>
+                        <div class="star-container1">
+                            <input type="radio" name="star1" id="five1" value="5">
+                                <label for="five1">
+                                    <svg class="star">
+                                    <use xlink:href="#star"/>
+                                    </svg>
+                                </label>
+                            <input type="radio" name="star1" id="four1" value="4">
+                                <label for="four1">
+                                    <svg class="star">
+                                    <use xlink:href="#star"/>
+                                    </svg>
+                                </label>
+                            <input type="radio" name="star1" id="three1" value="3">
+                                <label for="three1">
+                                    <svg class="star">
+                                    <use xlink:href="#star"/>
+                                    </svg>
+                                </label>
+                            <input type="radio" name="star1" id="two1" value="2">
+                                <label for="two1">
+                                    <svg class="star">
+                                    <use xlink:href="#star" />
+                                    </svg>
+                                </label>
+                            <input type="radio" name="star1" id="one1" value="1">
+                                <label for="one">
+                                    <svg class="star">
+                                    <use xlink:href="#star" />
+                                    </svg>
+                                </label>
+                        
+                        </div>
+                    </li>
+                    <li>
+                        <h3>Que nota você dá ao nosso atendimento ao cliente?</h3>
+                        <div class="star-container2">
+                            <input type="radio" name="star2" id="five2" value="5">
+                                <label for="five2">
+                                    <svg class="star">
+                                    <use xlink:href="#star"/>
+                                    </svg>
+                                </label>
+                            <input type="radio" name="star2" id="four2" value="4">
+                                <label for="four2">
+                                    <svg class="star">
+                                    <use xlink:href="#star"/>
+                                    </svg>
+                                </label>
+                            <input type="radio" name="star2" id="three2" value="3">
+                                <label for="three2">
+                                    <svg class="star">
+                                    <use xlink:href="#star"/>
+                                    </svg>
+                                </label>
+                            <input type="radio" name="star2" id="two2" value="2">
+                                <label for="two2">
+                                    <svg class="star">
+                                    <use xlink:href="#star" />
+                                    </svg>
+                                </label>
+                            <input type="radio" name="star2" id="one2" value="1">
+                                <label for="one2">
+                                    <svg class="star">
+                                    <use xlink:href="#star" />
+                                    </svg>
+                                </label>
+                        
+                        </div>
+                    </li>
+                    <li>
+                        <h3>De 1 a 5 quais as chances de você seguir comprando nossos produtos?</h3>
+                        <div class="star-container3">
+                            <input type="radio" name="star3" id="five3" value="5">
+                                <label for="five3">
+                                    <svg class="star">
+                                    <use xlink:href="#star"/>
+                                    </svg>
+                                </label>
+                            <input type="radio" name="star3" id="four3" value="4">
+                                <label for="four3">
+                                    <svg class="star">
+                                    <use xlink:href="#star"/>
+                                    </svg>
+                                </label>
+                            <input type="radio" name="star3" id="three3" value="3">
+                                <label for="three3">
+                                    <svg class="star">
+                                    <use xlink:href="#star"/>
+                                    </svg>
+                                </label>
+                            <input type="radio" name="star3" id="two3" value="2">
+                                <label for="two3">
+                                    <svg class="star">
+                                    <use xlink:href="#star" />
+                                    </svg>
+                                </label>
+                            <input type="radio" name="star3" id="one3" value="1">
+                                <label for="one3">
+                                    <svg class="star">
+                                    <use xlink:href="#star" />
+                                    </svg>
+                                </label>
+                        
+                        </div>
+                    </li>
+                </ol>
+
+                <button type="submit" id="enviar">Enviar Avaliação</button>
+            </form>
+
+        </main>
+
+        <article>
+            <h2>Resultados obtidos</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>E-mail Cadastrado</th>
+                        <th>Recomendaria nossos produtos?</th>
+                        <th>Atendimento</th>
+                        <th>Compraria novamente?</th>
+                    </tr>
+                </thead>
+                <tbody id="parent">
+                    <tr class="avaliacao">
+                        <td class="email">sflavia051@gmail.com</td>
+                        <td class="recomendaria">5</td>
+                        <td class="atendimento">5</td>
+                        <td class="re-compra">5</td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
+
+        <script src="./js/l-modas.js"></script>
+
+    </body>
+</html>

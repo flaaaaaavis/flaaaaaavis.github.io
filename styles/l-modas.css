@@ -1,0 +1,163 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    outline: none;
+}
+
+html{
+    max-width: 100vw;
+    
+    background: #8d8d8d;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main, article {
+    background: #f2f2f2;
+
+    height: 90vh;
+    margin-top: 5vh;
+    padding: 40px 60px 40px 40px;
+    border-radius: 30px;
+}
+
+main {
+    width: 600px;
+}
+
+article {
+    margin-bottom: 5vh;
+    width: fit-content;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#email {
+    width: 250px;
+    height: 30px;
+
+    border-radius: 50px;
+    padding-left: 10px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+}
+
+ol li h3 {
+    text-align: justify;
+    margin: 15px 0;
+}
+
+/* INÍCIO ESTRELAS */
+
+label {
+    cursor: pointer;
+}
+
+svg {
+    width: 3rem;
+    height: 3rem;
+    padding: 0.15rem;
+}
+
+
+/* hide radio buttons */
+
+input[name="star1"], input[name="star2"], input[name="star3"]{
+    display: inline-block;
+    width: 0;
+    opacity: 0;
+    margin-left: -2px;
+}
+
+/* hide source svg */
+
+.star-source {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+
+
+/* set initial color to transparent so fill is empty*/
+
+.star {
+    color: transparent;
+    transition: color 0.2s ease-in-out;
+}
+
+
+/* set direction to row-reverse so 5th star is at the end and ~ can be used to fill all sibling stars that precede last starred element*/
+
+.star-container1, .star-container2, .star-container3 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+
+label:hover ~ label .star, svg.star:hover, input[name="star1"]:focus ~ label .star, input[name="star2"]:focus ~ label .star, input[name="star3"]:focus ~ label .star, input[name="star1"]:checked ~ label .star, input[name="star2"]:checked ~ label .star, input[name="star3"]:checked ~ label .star {
+    color: #d62a9d;
+}
+
+input[name="star1"]:checked + label .star, input[name="star2"]:checked + label .star, input[name="star3"]:checked + label .star {
+    animation: starred 0.5s;
+}
+
+input[name="star1"]:checked + label, input[name="star2"]:checked + label, input[name="star3"]:checked + label {
+    animation: scaleup 1s;
+}
+
+@keyframes scaleup {
+    from {
+        transform: scale(1.2);
+    } to {
+        transform: scale(1);
+    }
+}
+
+@keyframes starred {
+    from {
+        color: #600040;
+    } to {
+        color: #d62a9d;
+    }
+}
+
+/* FINAL ESTRELAS */
+
+button {
+    width: 150px;
+    height: 30px;
+
+    border-radius: 50px;
+    margin-top: 35px;
+    margin-left: 350px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black;
+    text-align: center;
+}
+
+th, td {
+    padding: 5px 10px 5px 10px;
+}
