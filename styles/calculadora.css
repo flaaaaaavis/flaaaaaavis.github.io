@@ -1,0 +1,118 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    outline: none;
+    vertical-align: center;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #8d8d8d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    width: 400px;
+    height: 60vh;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+
+    border-radius: 30px;
+    background-color: #f2f2f2;
+}
+
+#visor {
+    height: 75px;
+
+    align-items: center;
+    background-color: white;
+}
+
+form input[type=number] {
+    width: 150px;
+    height: 50px;
+    padding-left: 10px;
+
+    border: 2px solid #8d8d8d;
+    border-radius: 10px;
+}
+
+form input[type=number]::placeholder {
+    text-decoration: underline;
+}
+
+.row {
+    height: 210px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#row2 {
+    width: 210px;
+    height: 210px;
+
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+
+ul {
+    list-style: none;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+li {
+    display: block;
+
+    width: 100px;
+    height: 100px;
+    border: 1px solid #9d9d9d;
+}
+
+#row2 input {
+    visibility:hidden;
+    width: 0px;
+    height: 0px;
+}
+
+#row2 label {
+    cursor: pointer;
+
+    margin-left: 25%;
+    justify-content: center;
+    align-content: center;
+
+    font-size: 64px;
+    color:#9d9d9d;
+}
+
+button[type=submit] {
+    width: 75px;
+    height: 210px;
+
+    font-size: 64px;
+    color:#9d9d9d;
+}
+
+#result {
+    background-color: white;
+    border-radius: 20px;
+    color: black;
+    margin-top: 20px;
+    width: 150px;
+    height: 50px;
+    align-self: center;
+    align-content: center;
+    text-align: center;
+}

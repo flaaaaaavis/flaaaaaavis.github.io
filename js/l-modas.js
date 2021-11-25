@@ -32,4 +32,7 @@ enviar.onclick = function(event) {
         avaliacaoTr.appendChild(compTd);
     }
 
+    window.scrollTo(window.location);
+    window.location = article;
+
 };

@@ -1,4 +1,4 @@
-document.querySelector("#title").innerHTML = "Meu favorite band";
+document.querySelector("#title").innerHTML = "My favorite band";
 
 document.querySelector("#aboutme").innerHTML = "Prazer, me chamo Flávia Souza, sou natural de Salgueiro (Pernambuco), tenho 19 anos e essa é a página na qual eu adiciono e implemento meu aprendizado na área de Web Development, então continue me acompanhando para ver minha evolução na área!";
 
