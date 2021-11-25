@@ -1,9 +1,9 @@
 * {
-    margin: 0%;
-    padding: 0%;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     outline: none;
-    vertical-align: center;
+    vertical-align: middle;
 }
 
 body {
@@ -16,103 +16,82 @@ body {
 }
 
 form {
-    width: 400px;
+    width: 250px;
     height: 60vh;
     padding: 20px;
 
     display: flex;
     flex-direction: column;
-    align-content: space-around;
+    justify-content: center;
+    align-items: center;
 
     border-radius: 30px;
     background-color: #f2f2f2;
 }
 
 #visor {
-    height: 75px;
+    height: 100px;
+    width: 100%;
 
-    align-items: center;
-    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 form input[type=number] {
-    width: 150px;
-    height: 50px;
-    padding-left: 10px;
+    width: 100%;
+    height: 40px;
+    padding-left: 15px;
 
     border: 2px solid #8d8d8d;
     border-radius: 10px;
 }
 
-form input[type=number]::placeholder {
-    text-decoration: underline;
-}
-
 .row {
-    height: 210px;
+    height: 180px;
+    width: 180px;
+
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-#row2 {
-    width: 210px;
-    height: 210px;
-
+.column {
+    width: fit-content;
     display: flex;
     flex-direction: column;
-    align-content: space-between;
-}
-
-ul {
-    list-style: none;
-    
-    display: flex;
-    flex-direction: row;
     justify-content: space-between;
 }
 
-li {
-    display: block;
+button {
+    width: 80px;
+    height: 80px;
 
-    width: 100px;
-    height: 100px;
-    border: 1px solid #9d9d9d;
-}
-
-#row2 input {
-    visibility:hidden;
-    width: 0px;
-    height: 0px;
-}
-
-#row2 label {
-    cursor: pointer;
-
-    margin-left: 25%;
+    display: flex;
     justify-content: center;
-    align-content: center;
+    align-items: center;
 
+    border-radius: 10px;
     font-size: 64px;
-    color:#9d9d9d;
-}
-
-button[type=submit] {
-    width: 75px;
-    height: 210px;
-
-    font-size: 64px;
-    color:#9d9d9d;
+    color: #9d9d9d;
+    border: 2px solid #9d9d9d;
 }
 
 #result {
     background-color: white;
     border-radius: 20px;
-    color: black;
+    color: #4d4d4d;
+
     margin-top: 20px;
     width: 150px;
     height: 50px;
-    align-self: center;
-    align-content: center;
-    text-align: center;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+span {
+    z-index: 1000;
 }

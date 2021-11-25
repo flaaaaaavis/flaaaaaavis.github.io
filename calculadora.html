@@ -1,57 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="stylesheet" href="styles/calculadora.css">
+        <link rel="stylesheet" href="./styles/calculadora.css">
 
         <title>Document</title>
     </head>
 
     <body>
 
-        <form id="formulario">
+        <form id="formulario" action="return 0">
 
-            <div class="row" id="visor">
+            <div id="visor">
                 <input type="number" placeholder="Insira um número " id="numero1">
-                <span id="op"></span>
                 <input type="number" placeholder="Insira um número " id="numero2">
             </div>
             
             <br />
             <div class="row">
-                <div  id="row2">
-                    <ul>
-                        <li>
-                            <input type="radio" name="operador" id="soma" value="1">
-                            <label for="soma">+</label>
-                        </li>
-                        <li>
-                            <input type="radio" name="operador" id="subtracao" value="2">
-                            <label for="subtracao">-</label>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li>
-                            <input type="radio" name="operador" id="multiplicacao" value="3">
-                            <label for="multiplicacao">x</label>
-                        </li>
-                        <li>
-                            <input type="radio" name="operador" id="divisao" value="4" >
-                            <label for="divisao">&div;</label>
-                        </li>
-                    </ul>
-                    
+                <div class="column">
+                    <button type="submit" id="soma" value="+" onclick="calc(event, this)">+</button>
+                    <button type="submit" id="subtracao" value="-" onclick="calc(event, this)">-</button>
                 </div>
-                <button type="submit" id="igual">=</button>
+                <div class="column">
+                    <button type="submit" id="multiplicacao" value="*" onclick="calc(event, this)">x</button>
+                    <button type="submit" id="divisao" value="/" onclick="calc(event, this)">&div;</button>
+                </div>     
             </div>
 
-            <span id="result"></span>
+            <p id="result"></p>
         </form>
 
-        <script src="js/calculadora.js"></script>
+        <script src="./js/calculadora.js"></script>
 
     </body>
 </html>

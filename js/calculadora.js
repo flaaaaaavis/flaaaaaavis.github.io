@@ -1,43 +1,51 @@
-var valor1 = document.querySelector("#numero1").value;
-var valor2 = document.querySelector("#numero2").value;
+// var valor1 = parseInt(document.querySelector("#numero1"));
+// var valor2 = parseInt(document.querySelector("#numero2"));
 
+// var adicao = document.querySelector("#soma");
+// adicao.onclick = function(event) {
+//     event.preventDefault();
 
+//     var resultado = valor1 + valor2;
+//     document.querySelector("#result").innerHTML = resultado;
+// };
 
-var igual = document.querySelector("button");
-igual.onclick = function (event) {
+// var sub = document.querySelector("#subtracao");
+// sub.onclick = function(event) {
+//     event.preventDefault();
+
+//     var resultado = valor1 - valor2;
+//     document.querySelector("#result").innerHTML = resultado;
+// };
+
+// var mult = document.querySelector("#multiplicacao");
+// mult.onclick = function(event) {
+//     event.preventDefault();
+
+//     var resultado = valor1 * valor2;
+//     document.querySelector("#result").innerHTML = resultado;
+// };
+
+// var divide = document.querySelector("#divisao");
+// divide.onclick = function(event) {
+//     event.preventDefault();
+
+//     var resultado = valor1 / valor2;
+//     document.querySelector("#result").innerHTML = resultado;
+// };
+
+function calc(event, e){
     event.preventDefault();
-
-    var form = document.querySelector("#formulario");
-
-    var operacao = form.operador.value;
-
-    switch (operacao) {
-        case "1":
-            var resultado = valor1 + valor2;
-            document.querySelector("#op").innerHTML = "+";
-            document.querySelector("#result").innerHTML = resultado;
-            break;
-        case "2":
-            var resultado = valor1 - valor2;
-            document.querySelector("#op").innerHTML = "-";
-            document.querySelector("#result").innerHTML = resultado;
-            break;
-        case "3":
-            var resultado = valor1 * valor2;
-            document.querySelector("#op").innerHTML = "x";
-            document.querySelector("#result").innerHTML = resultado;
-            break;
-        case "4":
-            if (valor2 == 0) {
-                alert("Operação Invalida");
-            } else {
-                var resultado = valor1 / valor2;
-                document.querySelector("#op").innerHTML = "/";
-                document.querySelector("#result").innerHTML = resultado;
-                break;
-            }
-        default:
-            alert("Operação Invalida");
-            break;
+    var operacao = e.value;
+    
+    var n1=parseFloat(document.getElementById("numero1").value);
+    var n2=parseFloat(document.getElementById("numero2").value);
+    
+    var calculo = eval(n1+operacao+n2);
+ 
+    if(!isNaN(calculo)){
+        let myElm = document.createElement("span");
+        document.getElementById("result").appendChild(myElm);
+        myElm.innerHTML = document.getElementById("numero1").value + operacao + document.getElementById("numero2").value + " = " + calculo;
     };
-};
+   
+}
