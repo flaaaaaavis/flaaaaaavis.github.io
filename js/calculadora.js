@@ -1,38 +1,3 @@
-// var valor1 = parseInt(document.querySelector("#numero1"));
-// var valor2 = parseInt(document.querySelector("#numero2"));
-
-// var adicao = document.querySelector("#soma");
-// adicao.onclick = function(event) {
-//     event.preventDefault();
-
-//     var resultado = valor1 + valor2;
-//     document.querySelector("#result").innerHTML = resultado;
-// };
-
-// var sub = document.querySelector("#subtracao");
-// sub.onclick = function(event) {
-//     event.preventDefault();
-
-//     var resultado = valor1 - valor2;
-//     document.querySelector("#result").innerHTML = resultado;
-// };
-
-// var mult = document.querySelector("#multiplicacao");
-// mult.onclick = function(event) {
-//     event.preventDefault();
-
-//     var resultado = valor1 * valor2;
-//     document.querySelector("#result").innerHTML = resultado;
-// };
-
-// var divide = document.querySelector("#divisao");
-// divide.onclick = function(event) {
-//     event.preventDefault();
-
-//     var resultado = valor1 / valor2;
-//     document.querySelector("#result").innerHTML = resultado;
-// };
-
 function calc(event, e){
     event.preventDefault();
     var operacao = e.value;
