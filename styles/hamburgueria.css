@@ -1,0 +1,207 @@
+/*
+#E5646E
+#DB4655
+#FFC269
+#FFA95F
+#FF8B5A
+#DBEAFF
+#C3DDFF
+#ECEAEC
+#5D5360
+#000000
+*/
+
+* {
+    margin: 0;
+    border: 0;
+    outline: none;
+    list-style: none;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+
+body {
+    min-height: 100vh;
+    max-width: 100vw;
+
+    background-image: url(../media/burguer-background.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+header {
+    width: 100%;
+    height: 60px;
+    z-index: 1000;
+
+    color: #000;
+    background-color: #FF8B5A;
+    box-shadow: 0px 2px 5px #eceaec9a;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+h1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+}
+
+h1 img {
+    width: 60px;
+
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+main {
+    margin-top: 10px;
+    padding: 15px;
+}
+
+h2 {
+    color: #DB4655;
+}
+
+form {
+    margin-top: 20px;
+    padding-right: 10px;
+}
+
+h3 {
+    margin-bottom: 5px;
+}
+
+.list {
+    margin-bottom: 5px;
+    padding: 5px 0 5px 20px;
+    border-radius: 10px;
+}
+
+.list_item {
+    vertical-align: middle;
+}
+
+input[type=radio], button {
+    cursor: pointer;
+}
+
+label {
+    margin-left: 5px;
+}
+
+#pao, #salada {
+    background-color: #ECEAEC;
+}
+
+#carne, #queijo {
+    background-color: #d1d1d1;
+}
+
+#row {
+    width: 100%;
+    margin-top: 30px;
+    margin-right: 25px;
+    padding-left: 40px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#box-calc {
+    width: 300px;
+    height: 35px;
+    padding-right: 15px;
+    border-radius: 5px;
+
+    background: rgb(240, 240, 240);
+    border: 3px solid #FF8B5A;
+    box-shadow: 0px 2px 5px #eceaec77;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#calc {
+    height: 29px;
+    width: 100px;
+    background: #FF8B5A;
+    box-shadow: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+p {
+    font-weight: 700; 
+}
+
+#concluir {
+    padding: 10px 15px;
+    border-radius: 5px;
+
+    color: #000;
+    font-weight: bold;
+    background-color: #FF8B5A;
+    box-shadow: 0px 2px 5px #eceaec77;
+}
+
+#concluir:hover, #calc:hover {
+    background: #fff;
+    border: 3px solid #FF8B5A;
+}
+
+/* modal */
+
+.modal-login {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100vw;
+    height: 100vh;
+
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: .3s;
+}
+
+.modal-login:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal-content {
+    width: 100%;
+    padding-top: 35px;
+    padding-bottom: 35px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: #ECEAEC;
+    width: 40vw;
+    height: 50vh;
+    border-radius: 3vh;
+}
+
+.modal-content img {
+    width: 200px;
+}
+
+.modal-content p {
+    z-index: 1001;
+    font-size: 28px;
+    color: #5D5360;
+}

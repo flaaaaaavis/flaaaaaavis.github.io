@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="./styles/hamburgueria.css">
+
+        <link rel="shortcut icon" href="./media/burguer.png" type="image/x-icon">
+
+        <title>Burguer Express</title>
+    </head>
+    <body>
+
+        <div id="modal" class="modal-login">
+            <div class="modal-content">
+                <img src="media/check (1).png">
+                <br />
+                <p>Pedido enviado!</p>
+            </div>
+        </div>
+
+        <header>
+            <h1><img src="./media/burguer.png"> Burguer Express</h1>
+        </header>
+        
+        <main>
+            <h2>Monte aqui seu hambúrguer!</h2>
+            <form id="formulario">
+                <ul>
+                    <li id="pao" class="list">
+                        <h3>Escolha o tipo de pão:</h3>
+                        <ul id="pao_list">
+                            <li class="pao_list_item list_item">
+                                <input type="radio" name="pao" id="frances" value="3.00">
+                                <label for="frances">Francês</label>
+                            </li>
+                            <li class="pao_list_item list_item">
+                                <input type="radio" name="pao" id="australiano" value="8.00">
+                                <label for="australiano">Australiano</label>
+                            </li>
+                            <li class="pao_list_item list_item">
+                                <input type="radio" name="pao" id="brioche" value="6.00">
+                                <label for="brioche">Brioche</label>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="carne" class="list">
+                        <h3>Escolha o sabor de sua carne:</h3>
+                        <ul id="carne_list">
+                            <li class="carne_list_item list_item">
+                                <input type="radio" name="carne" id="picanha" value="13.00">
+                                <label for="picanha">Picanha</label>
+                            </li>
+                            <li class="carne_list_item list_item">
+                                <input type="radio" name="carne" id="costela" value="10.00">
+                                <label for="costela">Costela</label>
+                            </li>
+                            <li class="carne_list_item list_item">
+                                <input type="radio" name="carne" id="vegano" value="12.00">
+                                <label for="vegano">Vegano</label>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="salada" class="list">
+                        <h3>Escolha sua salada:</h3>
+                        <ul class="salada_list">
+                            <li id="salada_list_item list_item">
+                                <input type="radio" name="salada" id="alface"  value="1.50">
+                                <label for="alface">Alface</label>
+                            </li>
+                            <li class="salada_list_item list_item">
+                                <input type="radio" name="salada" id="tomate" value="1.50">
+                                <label for="tomate">Tomate</label>
+                            </li>
+                            <li class="salada_list_item list_item">
+                                <input type="radio" name="salada" id="nada" value="0.00">
+                                <label for="nada">Sem Salada</label>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="queijo" class="list">
+                        <h3>Escolha um tipo de queijo:</h3>
+                        <ul id="queijo_list">
+                            <li class="queijo_list_item list_item">
+                                <input type="radio" name="queijo" id="mussarela" value="3.00">
+                                <label for="mussarela">Mussarela</label>
+                            </li>
+                            <li class="queijo_list_item list_item">
+                                <input type="radio" name="queijo" id="prato" value="3.00">
+                                <label for="prato">Prato</label>
+                            </li>
+                            <li class="queijo_list_item list_item">
+                                <input type="radio" name="queijo" id="cheddar" value="5.00">
+                                <label for="cheddar">Cheddar</label>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <div id="row">
+                   <span id="box-calc">
+                       <button type="button" id="calc" onclick="funcao()">Calcular</button>
+                       <p id="resultado"></p>
+                    </span>
+
+                    <a href="#modal">
+                        <button type="button" id="concluir" onclick="funcao()">Finalizar Pedido</button>
+                    </a>
+                </div>
+                
+            </form>
+        </main>
+        
+
+        <script src="./js/hamburgueria.js"></script>
+        
+    </body>
+</html>
