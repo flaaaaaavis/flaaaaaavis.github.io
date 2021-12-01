@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles/carros.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h2>Na corrida de hoje:</h2>
+        <ul>
+            <li id="pedro">Pedro</li>
+            <li id="juca">Juca</li>
+            <li id="edna">Edna</li>
+        </ul>
+    </header>
+
+    <main>
+        <section id="input-container">
+            <h2>Escolha o tipo de corrida:</h2>
+            <br />
+            <label for="corrida-rapida">
+            <input type="radio" name="race" id="corrida-rapida" value="10">
+            Corrida Rápida
+            </label>
+            <br />
+            <label for="grande-premio">
+            <input type="radio" name="race" id="grande-premio" value="70">
+            Grande Prêmio
+            </label>
+            <br />
+            <label for="enduro">
+            <input type="radio" name="race" id="enduro" value="160">
+            Enduro
+            </label> 
+            <br />
+            <input type="button" value="Jogar" onclick="insertion()">
+        
+        </section>
+
+        <div id="result"></div>
+    </main>
+    
+    <script src="js/carros.js"></script>
+
+</body>
+</html>

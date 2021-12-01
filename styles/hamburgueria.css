@@ -23,11 +23,15 @@
 body {
     min-height: 100vh;
     max-width: 100vw;
+    overflow-x: hidden;
 
     background-image: url(../media/burguer-background.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
 }
 
 header {
@@ -158,7 +162,6 @@ p {
 }
 
 /* modal */
-
 .modal-login {
     position: fixed;
     top: 0;
@@ -197,11 +200,28 @@ p {
 }
 
 .modal-content img {
-    width: 200px;
+    width: 180px;
 }
 
 .modal-content p {
     z-index: 1001;
     font-size: 28px;
     color: #5D5360;
+}
+/* FINAL MODAL */
+
+#descricao {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#descricao div {
+    align-self: center;
+    width: 40vw;
+    height: 60vh;
+    padding: 20px;
+    border-radius: 30px;
+    background-color: #ECEAEC;
 }
