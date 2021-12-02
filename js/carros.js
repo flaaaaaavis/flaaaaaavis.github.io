@@ -20,17 +20,15 @@ function greater(array) {
 }
 
 function race(laps) {
-  let wins = [0, 0 ,0]; // pedro, juca amd edna victories
-  let pedro, juca, edna;
-  for (let i = 0; i < laps; i++) {
-
-    pedro = calculateVelocity(150, 230, 3);
-    juca  = calculateVelocity(120, 260, 5);
-    edna  = calculateVelocity(180, 220, 1);
-    wins[greater([pedro, juca, edna])] +=1;
-
-  }
-  return greater(wins); 
+    let wins = [0, 0 ,0];
+    let pedro, juca, edna;
+    for (let i = 0; i < laps; i++) {
+        pedro = calculateVelocity(150, 230, 3);
+        juca  = calculateVelocity(120, 260, 5);
+        edna  = calculateVelocity(180, 220, 1);
+        wins[greater([pedro, juca, edna])] +=1;
+    }
+  return greater(wins);
 }
 
 function insertion() {
@@ -45,8 +43,8 @@ function insertion() {
 
   if (winner == 0) {
     winnerElement.innerHTML += "Pedro";
-  } 
-  else if(winner ==1) {
+  }
+  else if(winner == 1) {
     winnerElement.innerHTML += "Juca";
   }
   else {
