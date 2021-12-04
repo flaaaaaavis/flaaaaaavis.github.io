@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="styles/jogodavelha.css">
+
+        <title>Jogo da Véa</title>
+    </head>
+    
+    <body>
+        <header id="turn">
+            <h2 id="turn_text">É a vez do: <img id="turn_text_image" src=""></h2>
+        </header>
+
+        <main id="board">
+
+            <div id="column">
+                <div class="row">
+                    <button id="a1" class="slot" mark=""></button>
+                    <button id="a2" class="slot" mark=""></button>
+                    <button id="a3" class="slot" mark=""></button>
+                </div>
+                <div class="row">
+                    <button id="b1" class="slot" mark=""></button>
+                    <button id="b2" class="slot" mark=""></button>
+                    <button id="b3" class="slot" mark=""></button>
+                </div>
+                <div class="row">
+                    <button id="c1" class="slot"></button>
+                    <button id="c2" class="slot"></button>
+                    <button id="c3" class="slot"></button>
+                </div>
+            </div>
+
+            <section>
+                <h3>O ganhador é: <span></span></h3>
+            </section>
+            
+        </main>
+
+        <script type="text/javascript" src="./js/jogodavelha.js"></script>
+    </body>
+</html>
