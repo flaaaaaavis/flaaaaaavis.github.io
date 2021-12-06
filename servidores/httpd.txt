@@ -1,0 +1,29 @@
+Desinstalando o Apache 2 (httpd)
+    systemctl status apache2
+    apt purge "apache2*" -y
+    apt autoremove -y
+    systemctl status apache2
+
+Download com wget
+    wget http://httpd.apache.org/download.cgi#apache24
+
+Erro 1
+    configure: error: APR not found. Please read the documentation.
+
+    wget https://dlcdn.apache.org//apr/apr-1.7.0.tar.gz
+    wget https://dlcdn.apache.org//apr/apr-util-1.6.1.tar.gz
+    tar -xzvf apr-1.7.0.tar.gz
+    tar -xzvf apr-util-1.6.1.tar.gz
+    mv apr-1.7.0.tar.gz apr
+    mv apr-util-1.6.1 apr-util
+
+Erro 2
+    configure: error: no acceptable C compiler found in $PATH
+
+    sudo su
+    apt-get install build-essential
+
+Erro 3
+    configure: error: pcre-config for libpcre not found. PCRE is required and available from http://pcre.org/
+
+    
