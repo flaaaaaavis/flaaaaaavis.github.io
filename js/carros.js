@@ -1,85 +1,85 @@
-let popular = {
-  maxv: Math.floor(Math.random() * (200 - 180)) + 180,
-  minv: Math.floor(Math.random() * (130 - 110)) + 110,
-  derrap: Math.floor(Math.random() * (4 - 3)) + 3,
+let objeto = {
+  popular: {
+    maxv: Math.floor(Math.random() * (20)) + 180,
+    minv: Math.floor(Math.random() * (20)) + 110,
+    derrap: Math.floor(Math.random() * (1)) + 3,
+  },
+  sport: {
+    maxv: Math.floor(Math.random() * (20)) + 195,
+    minv: Math.floor(Math.random() * (20)) + 125,
+    derrap: Math.floor(Math.random() * (0)) + 3,
+  },
+  supersport: {
+    maxv: Math.floor(Math.random() * (20)) + 210,
+    minv: Math.floor(Math.random() * (20)) + 140,
+    derrap: Math.floor(Math.random() * (0.75)) + 1,
+  }
 }
-let sport = {
-  maxv: Math.floor(Math.random() * (215 - 195)) + 195,
-  minv: Math.floor(Math.random() * (145 - 125)) + 125,
-  derrap: Math.floor(Math.random() * (3 - 3)) + 3,
-}
-let supersport = {
-  maxv: Math.floor(Math.random() * (230 - 210)) + 210,
-  minv: Math.floor(Math.random() * (160 - 140)) + 140,
-  derrap: Math.floor(Math.random() * (1.75 - 1)) + 1,
-}
+
+
 
 let car;
 
 function choosecar() {
-  let choosen = Math.floor(Math.random() * (20 - 1)) + 1;
+  let choosen = Math.floor(Math.random() * (19)) + 1;
   
   if(choosen > 0 && choosen <=12) {
-    car = popular;
+    car = objeto.popular;
   } else if (choosen > 12 && choosen < 20) {
-    car = sport;
+    car = objeto.sport;
   } else if (choosen == 20) {
-    car = supersport;
+    car = objeto.supersport;
   }
 }
 
 choosecar();
 
-function calculateVelocity() {
+function calcSpeed() {
   let random = Math.floor(Math.random() * (car.maxv - car.minv)) + car.minv;
   result = random - random * car.derrap/100;
   return result;
 }
 
-function greater(array) {
+function win(array) {
   let result;
-
   if(array[0] > array[1] && array[0] > array[2])
     result = 0;
-
   else if (array[1]> array[2])
     result = 1;
-
   else
     result = 2;
-
   return result;
 }
 
-function race(laps) {
+function race(circuits) {
     let wins = [0, 0 ,0];
     let pedro, juca, edna;
-    for (let i = 0; i < laps; i++) {
-        pedro = calculateVelocity();
-        juca  = calculateVelocity();
-        edna  = calculateVelocity();
-        wins[greater([pedro, juca, edna])] +=1;
+    for (let i = 0; i < circuits; i++) {
+        pedro = calcSpeed();
+        juca  = calcSpeed();
+        edna  = calcSpeed();
+        wins[win([pedro, juca, edna])] +=1;
     }
-  return greater(wins);
+  return win(wins);
 }
 
-function insertion() {
-  const laps = document.querySelector('input[name="race"]:checked').value;
-  const winner = race(laps);
-  const winnerElement = document.createElement("h2");
+function printwinner() {
+  const circuits = document.querySelector('input[name="race"]:checked').value;
+  const winner = race(circuits);
+  const slot = document.createElement("h2");
   const result = document.getElementById("result");
   result.innerHTML = "";
-  winnerElement.innerHTML = "";
-  winnerElement.innerHTML = "O ganhador é: "
-  result.append(winnerElement);
+  slot.innerHTML = "";
+  slot.innerHTML = "O ganhador é: "
+  result.append(slot);
 
   if (winner == 0) {
-    winnerElement.innerHTML += "Pedro";
+    slot.innerHTML += "Pedro";
   }
   else if(winner == 1) {
-    winnerElement.innerHTML += "Juca";
+    slot.innerHTML += "Juca";
   }
   else {
-    winnerElement.innerHTML += "Edna";
+    slot.innerHTML += "Edna";
   }
 }

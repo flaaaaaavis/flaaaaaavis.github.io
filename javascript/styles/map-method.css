@@ -1,0 +1,19 @@
+body, form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+form {
+    margin-bottom: 30px;
+}
+
+table {
+    margin-bottom: 10px;
+    table-layout: auto;
+}
+
+table td {
+    border: 1px solid black;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./styles/map-method.css">
+
+    <title>Duplicata</title>
+</head>
+<body>
+    <section>
+        <h2>Cadastrar</h2>
+        <form>
+            <label for="cliente">Nome do Cliente</label>
+            <input type="text" id="cliente" required><br />
+            <label for="vencimento">Data de Vencimento</label>
+            <input type="date" id="vencimento" required><br />
+            <label for="valor">Valor da Compra</label>
+            <input type="number" id="valor" required><br />
+            <input type="button" value="Cadastrar Compra">
+        </form>
+    </section>
+    <section>
+        <table>
+            <thead>
+                <tr>
+                    <td>Nome do Cliente</td>
+                    <td>Data de Vencimento</td>
+                    <td>Valor da Compra</td>
+                    <td>Juros</td>
+                    <td>Valor Atualizado</td>
+                </tr>
+            </thead>
+            <tbody id="tabela">
+                
+            </tbody>
+        </table>
+        <button id="calcular">Calcular</button>
+    </section>
+
+    <script src="js/map-method.js"></script>
+
+</body>
+</html>
