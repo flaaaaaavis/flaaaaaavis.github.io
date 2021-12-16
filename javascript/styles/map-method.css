@@ -12,8 +12,10 @@ form {
 table {
     margin-bottom: 10px;
     table-layout: auto;
+    border-collapse: collapse;
 }
 
 table td {
     border: 1px solid black;
+    padding: 3px 10px
 }
