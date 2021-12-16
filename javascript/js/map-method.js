@@ -19,7 +19,7 @@ function keepit() {
 
 function pushToObject() {
     let subarray = {};
-    subarray["cliente"] = nomeCliente;
+    subarray["cliente"] = nomeCliente.toUpperCase();
     subarray["vencimento"] = dataCompra;
     subarray["valor"] = parseFloat(valorCompra);
     subarray["juros"] = "";
@@ -41,7 +41,7 @@ function sendToDocument() {
     tableB.appendChild(node);
 
     let nomeTd = document.createElement("td");
-    let nomeText = document.createTextNode(nomeCliente);
+    let nomeText = document.createTextNode(nomeCliente.toUpperCase());
     nomeTd.appendChild(nomeText);
     nomeTd.setAttribute("id", contadorTr+"-cliente");
     node.appendChild(nomeTd);
@@ -84,6 +84,7 @@ calc.onclick = function (){
             valorJuros = juros / 100;
             valorFinal = (item.valor + item.valor*valorJuros).toFixed(2);
         } else {
+            juros = 0;
             valorFinal = (item.valor).toFixed(2);
         }
 
@@ -98,72 +99,119 @@ calc.onclick = function (){
         }
         
     });
-    console.log(array);
 };
 
 
 
-// let porNome = document.getElementById('porNome');
-// porNome.onclick = function() {
-//     array.sort( compare );
-//     sendReorder();
-// }
+let porNome = document.getElementById('porNome');
+porNome.onclick = function (){
+    array.sort((a, b) => {
+        if(a.cliente > b.cliente) {
+            return 1
+        } else {
+            return -1
+        }
+    });
+    document.getElementById("tabela").innerHTML = "";
 
-// let vazio = "";
+    array.forEach((item, index) => {
+        let node = document.createElement("tr");
+        node.setAttribute("id", index);
+        let tableB = document.getElementById("tabela");
+        tableB.appendChild(node);
+    
+        let nomeTd = document.createElement("td");
+        let nomeText = document.createTextNode(item.cliente);
+        nomeTd.appendChild(nomeText);
+        nomeTd.setAttribute("id", index+"-cliente");
+        node.appendChild(nomeTd);
+    
+        let vencimentoTd = document.createElement("td");
+        let vencimentoText = document.createTextNode(item.vencimento);
+        vencimentoTd.appendChild(vencimentoText);
+        vencimentoTd.setAttribute("id", index+"-vencimento");
+        node.appendChild(vencimentoTd);
+    
+        let valorTd = document.createElement("td");
+        let valorText = document.createTextNode(item.valor);
+        valorTd.appendChild(valorText);
+        valorTd.setAttribute("id", index+"-valor");
+        node.appendChild(valorTd);
+    
+        jurosTd = document.createElement("td");
+        let jurosText = document.createTextNode(item.juros);
+        jurosTd.appendChild(jurosText);
+        jurosTd.setAttribute("id", index+"-juros");
+        node.appendChild(jurosTd);
+    
+        finalTd = document.createElement("td");
+        let finalText = document.createTextNode(item.final);
+        finalTd.appendChild(finalText);
+        finalTd.setAttribute("id", index+"-final");
+        node.appendChild(finalTd);
+    });
+}
 
-// function substituir(item) {
-//     let node = document.createElement("tr");
-//     let tableB = document.getElementById("tabela");
-//     tableB.appendChild(node);
+let porVencimento = document.getElementById('porVencimento');
+porVencimento.onclick = function (){
+    array.sort((a, b) => {
+        if(a.vencimento > b.vencimento) {
+            return 1
+        } else {
+            return -1
+        }
+    });
+    document.getElementById("tabela").innerHTML = "";
 
-//     let nomeTd = document.createElement("td");
-//     let nomeText = document.createTextNode(item.cliente);
-//     nomeTd.appendChild(nomeText);
-//     node.appendChild(nomeTd);
+    array.forEach((item, index) => {
+        let node = document.createElement("tr");
+        node.setAttribute("id", index);
+        let tableB = document.getElementById("tabela");
+        tableB.appendChild(node);
+    
+        let nomeTd = document.createElement("td");
+        let nomeText = document.createTextNode(item.cliente);
+        nomeTd.appendChild(nomeText);
+        nomeTd.setAttribute("id", index+"-cliente");
+        node.appendChild(nomeTd);
+    
+        let vencimentoTd = document.createElement("td");
+        let vencimentoText = document.createTextNode(item.vencimento);
+        vencimentoTd.appendChild(vencimentoText);
+        vencimentoTd.setAttribute("id", index+"-vencimento");
+        node.appendChild(vencimentoTd);
+    
+        let valorTd = document.createElement("td");
+        let valorText = document.createTextNode(item.valor);
+        valorTd.appendChild(valorText);
+        valorTd.setAttribute("id", index+"-valor");
+        node.appendChild(valorTd);
+    
+        jurosTd = document.createElement("td");
+        let jurosText = document.createTextNode(item.juros);
+        jurosTd.appendChild(jurosText);
+        jurosTd.setAttribute("id", index+"-juros");
+        node.appendChild(jurosTd);
+    
+        finalTd = document.createElement("td");
+        let finalText = document.createTextNode(item.final);
+        finalTd.appendChild(finalText);
+        finalTd.setAttribute("id", index+"-final");
+        node.appendChild(finalTd);
+    });
+}
 
-//     let vencimentoTd = document.createElement("td");
-//     let vencimentoText = document.createTextNode(item.vencimento);
-//     vencimentoTd.appendChild(vencimentoText);
-//     node.appendChild(vencimentoTd);
-
-//     let valorTd = document.createElement("td");
-//     let valorText = document.createTextNode(item.valor);
-//     valorTd.appendChild(valorText);
-//     node.appendChild(valorTd);
-
-//     jurosTd = document.createElement("td");
-//     node.appendChild(jurosTd);
-
-//     finalTd = document.createElement("td");
-//     node.appendChild(finalTd);
-// }
-
-// function sendReorder() {
-//     let tableB = document.getElementById("tabela");
-//     tableB.append(vazio);
-
-//     array.forEach(substituir);
-// }
-
-// function compare( a, b ) {
-//     if ( a.cliente < b.cliente ){
-//         return -1;
-//     }
-//     if ( a.cliente > b.cliente ){
-//         return 1;
-//     }
-//     return 0;
-//     sendReorder();
-// }
-
-// let porNome = document.getElementById('porNome');
-// porNome.onclick = array.sort((a, b) => {
-//     if(a.cliente > b.cliente) {
-//         return 1
-//     } else {
-//         return -1
-//     }
-// });
-
-// console.log(array);
-      
+let sum = document.getElementById('sum');
+sum.onclick = function() {
+    console.log(array);
+    array.forEach((curr, next) => {
+        if(curr.cliente == next.cliente && curr.vencimento == next.vencimento) {
+            array.reduce((curr, next) => {
+                curr.final = curr.final + next.final;
+                splice(next, 1);
+                return curr;
+            });
+        }
+    });
+    console.log(array);
+}
