@@ -1,0 +1,33 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: space-around;
+}
+
+button {
+    width: fit-content;
+    height: fit-content;
+    margin-bottom: 20px;
+
+    background-color: transparent;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+fieldset {
+    text-align: justify;
+    text-indent: 20px;
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="./styles/map-method.css">
+
+        <title>Duplicata</title>
+    </head>
+    <body>
+        <section>
+            <h2>Cadastrar</h2>
+            <form>
+                <label for="cliente">Nome do Cliente</label>
+                <input type="text" id="cliente" required><br />
+                <label for="vencimento">Data de Vencimento</label>
+                <input type="date" id="vencimento" required><br />
+                <label for="valor">Valor da Compra</label>
+                <input type="number" id="valor" required><br />
+                <input type="button" value="Cadastrar Compra">
+            </form>
+        </section>
+        <section>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome do Cliente</th>
+                        <th>Data de Vencimento</th>
+                        <th>Valor da Compra</th>
+                        <th>Juros</th>
+                        <th>Valor Atualizado</th>
+                    </tr>
+                </thead>
+                <tbody id="tabela">
+                    <tr id="0">
+                        <td id="0-cliente">CLEITON</td>
+                        <td id="0-vencimento">2021-12-14</td>
+                        <td id="0-valor">200</td>
+                        <td id="0-juros"></td>
+                        <td id="0-final"></td>
+                    </tr>
+                    <tr id="0">
+                        <td id="1-cliente">LARA</td>
+                        <td id="1-vencimento">2014-10-14</td>
+                        <td id="1-valor">35</td>
+                        <td id="1-juros"></td>
+                        <td id="1-final"></td>
+                    </tr>
+                    <tr id="0">
+                        <td id="2-cliente">GRAÇA</td>
+                        <td id="2-vencimento">2021-05-30</td>
+                        <td id="2-valor">120</td>
+                        <td id="2-juros"></td>
+                        <td id="2-final"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <button id="calcular">Calcular</button>
+            <button id="porNome">Ordenar por nome</button>
+            <button id="porVencimento">Ordenar por vencimento</button>
+            <button id="sum">Somar Débitos</button>
+        </section>
+        <form id="filtro">
+            <label for="filtro_min-date">Data início</label>
+            <input type="date" id="filtro_min-date" required>
+            <br />
+            <label for="filtro_max-date">Data fim</label>
+            <input type="date" id="filtro_max-date" required>
+            <br />
+            <label for="filtro_min-value">Valor mínimo</label>
+            <input type="number" id="filtro_min-value" required>
+            <br />
+            <label for="filtro_max-value">Valor máximo</label>
+            <input type="number" id="filtro_max-value" required>
+            <br />
+            <input type="button" value="Filtrar" id="filtro_submit">
+        </form>
+
+        <script src="js/map-method.js"></script>
+
+    </body>
+</html>

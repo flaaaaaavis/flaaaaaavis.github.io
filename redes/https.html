@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+
+        <meta property="og:title" content="Elemento audio" />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content="https://flaaaaaavis.github.io" />
+        <meta property="og:description" content="Flávia Souza | Aspirante a Web Developer" />
+        <meta property="og:image" content="https://alphalumen.org.br/wp-content/uploads/2020/05/imagem-site-ial-01.jpg" />
+
+        <link rel="shortcut icon" href="./media/icon.png" type="image/icon">
+        <link rel="stylesheet" href="./styles/index.css">
+        <title>HTTPS</title>
+    </head>
+    <body>
+        <header>
+            <img id="logo-alpha" src="https://alphalumen.org.br/wp-content/uploads/2020/06/ial-logo.png" alt="Logomarca do Instituto Alpha Lumen" width="300px" height="70px">
+            <a href="redes.html">Entendendo a Internet</a>
+            <a href="git-github.html">Git e GitHub</a>
+            <a href="front-end.html">Front-end</a>
+        </header>
+
+        <div class="middle">
+            <main>
+                <h1>Hypertext Transfer Protocol Secure</h1>
+                <hr>
+                <br />
+                <p><i>“”</i></p>
+                <br />
+                <ul>
+                    <li>Cliente-Servidor</li>
+                    <li>HTTP + SSL (ou TLS)</li>
+                    <li>Certificado digital</li>
+                    <li>Todo certificado tem uma data validade e serve para provar a identidade entre o cliente e o servidor.</li>
+                    <li>É no certificado digital que encontramos a chave pública utilizada para criptografar os nossos dados.</li>
+                    <li>A principal função de uma entidade certificadora é garantir que os certificados que estão sendo utilizados podem ser confiados.</li>
+                    <li>Chave pública (cliente)</li>
+                    <li>Chave privada (servidor)</li>
+                    <li>A chave privada é utilizada para descriptografar os dados que foram criptografados com a chave pública, por isso ela é importante e deve ficar apenas em posse do servidor.</li>
+                    <li>Por padrão, é acessado pela porta 443.</li>
+                </ul>
+                <br /><br />
+                <h3>Referências</h3><br />
+                <p>
+                    <a href=""></a><br />
+                </p>
+                
+            </main>
+
+            <aside>
+                <h3>Dúvidas</h3>
+                    <h5>Mas o sistema de chaves assimétricas não é lento?</h5>
+                        <p>Aprendemos que o HTTPS usa uma chave pública e uma chave privada. As chaves estão ligadas matematicamente, o que foi cifrado pela chave pública só pode ser decifrado pela chave privada. Isso garante que os dados cifrados pelo navegador (chave pública) só podem ser lidos pelo servidor (chave privada). Como temos duas chaves diferentes envolvidas, esse método de criptografia é chamado de criptografia assimétrica. No entanto, a criptografia assimétrica tem um problema, ela é lenta.</p>
+                        <p>Por outro lado, temos a criptografia simétrica, que usa a mesma chave para cifrar e decifrar os dados, como na vida real, onde usamos a mesma chave para abrir e fechar a porta. A criptografia simétrica é muito mais rápida, mas infelizmente não tão segura. Como existe apenas uma chave, ela ficará espalhada pelos clientes (navegadores) e qualquer um, que tem a posse dessa chave, pode decifrar a comunicação.</p>
+                        <p>Agora, o interessante é que o HTTPS usa ambos os métodos de criptografia, assimétrica e simétrica.</p>
+                        <p>No certificado, vem a chave pública para o cliente utilizar, certo? E o servidor continua na posse da chave privada, ok? Isso é seguro, mas lento e por isso o cliente gera uma chave simétrica ao vivo. Uma chave só para ele e o servidor com o qual está se comunicando naquele momento! Essa chave exclusiva (e simétrica) é então enviada para o servidor utilizando a criptografia assimétrica (chave privada e pública) e então é utilizada para o restante da comunicação.</p>
+                        <p>Então, HTTPS começa com criptografia assimétrica para depois mudar para criptografia simétrica. Essa chave simétrica será gerada no início da comunicação e será reaproveitada nas requisições seguintes.</p>
+            </aside>
+        </div>
+        
+        <footer>
+            <button>
+                <a href="redes.html">Voltar</a>
+            </button>
+
+            <span class="link-sociais">
+                <a href="https://www.instagram.com/flaaaaaavis" target="_blank">
+                    <img class="sociais" src="media/instagram.png">Instagram
+                </a>
+                <a href="https://www.linkedin.com/in/ridailda/" target="_blank">
+                    <img class="sociais" src="media/linkedin.png">LinkedIn
+                </a>
+                <a href="https://github.com/flaaaaaavis" target="_blank">
+                    <img class="sociais" src="media/github.png">GitHub
+                </a>
+            </span>
+            
+        </footer>
+        
+    </body>
+</html>

@@ -1,0 +1,32 @@
+* {
+    overflow-x: hidden;
+    margin: 0;
+    outline: none;
+}
+
+body {
+    min-height: 100vh;
+    width: 100vw;
+}
+
+body, form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+form {
+    margin-bottom: 30px;
+}
+
+table {
+    margin-bottom: 10px;
+    table-layout: auto;
+    border-collapse: collapse;
+}
+
+table td, table th {
+    border: 1px solid black;
+    padding: 3px 10px
+}

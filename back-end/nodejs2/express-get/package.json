@@ -1,0 +1,12 @@
+{
+  "name": "express-get",
+  "version": "1.0.0",
+  "description": "",
+  "main": "express-get.js",
+  "scripts": {
+    "dev": "nodemon express-get.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,15 @@
+{
+  "name": "ajax-get",
+  "version": "1.0.0",
+  "description": "",
+  "main": "ajax-get.js",
+  "scripts": {
+    "dev": "nodemon express-get.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ajax": "^0.0.4"
+  }
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+
+        <meta property="og:title" content="Elemento audio" />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content="https://flaaaaaavis.github.io" />
+        <meta property="og:description" content="Flávia Souza | Aspirante a Web Developer" />
+        <meta property="og:image" content="https://alphalumen.org.br/wp-content/uploads/2020/05/imagem-site-ial-01.jpg" />
+
+        <link rel="shortcut icon" href="./media/icon.png" type="image/icon">
+        <link rel="stylesheet" href="./styles/index.css">
+        <title>HTTP</title>
+    </head>
+    <body>
+        <header>
+            <img id="logo-alpha" src="https://alphalumen.org.br/wp-content/uploads/2020/06/ial-logo.png" alt="Logomarca do Instituto Alpha Lumen" width="300px" height="70px">
+            <a href="redes.html">Entendendo a Internet</a>
+            <a href="git-github.html">Git e GitHub</a>
+            <a href="front-end.html">Front-end</a>
+        </header>
+
+        <div class="middle">
+            <main>
+                <h1>Hypertext Transfer Protocol</h1>
+                <hr>
+                <br />
+                <p><i>“Na internet, quando fazemos um comparativo com as formas de comunicação humanas, o idioma mais comum é o HTTP. Ele é responsável por definir a forma de como os dados são trafegados na rede através de várias regras. Portanto, todo mundo que conhece o idioma HTTP poderá receber e enviar dados e participar dessa conversa!”</i></p>
+                <br />
+                <ul>
+                    <li>Utilização da internet</li>
+                    <li>URL</li>
+                    <li>Modelo Cliente-Servidor</li>
+                    <li>Efetua as solicitções através do envio de 'texto puro'.</li>
+                    <li>O HTTP foi feito para estabelecer regras (protocolo) de comunicação entre o modelo Cliente-Servidor que funciona na Web.</li>
+                    <li>O caminho que a informação faz entre o cliente e o servidor (seja para requisição ou resposta) costuma passar por dispositivos intermediários, como roteador e modem, o que traz a necessidade de tornar a transferência dessas informações mais segura.</li>
+                    <li>Por padrão, é acessado pela porta 80.</li>
+                    <li>HTTP é stateless: não mantém informações entre requisições, portanto, cada requisição feita pelo cliente independe das demais, o que faz com que a quantidade de informações passada a cada solicitação seja maior. Para evitar isso, os navegadores costumam armazenar alguns cookies de navegação. Dentre eles, há um que serve para identificar o usuário que está fazendo as solicitações (session id), o que evita o reenvio de dados de login e senha. As informações contidas nesse cookie são fornecidas pelo servidor e armzenadas pelo navegador.</li>
+                    <li>Uma sessão HTTP nada mais é que um tempo que o cliente permanece ativo no sistema! Isso é parecido com uma sessão no cinema. Uma sessão, nesse contexto, é o tempo que o cliente usa a sala no cinema para assistir a um filme. Quando você sai da sala, termina a sessão. Ou seja, quando você se desloga, a Alura termina a sua sessão.</li>
+                </ul>
+                <br /><br />
+                <h2>O que é URL?</h2>
+                    <ul>
+                        <li>São endereços da WEB.</li>
+                        <li>Começam com protocolo+domínio</li>
+                        <li>Pode conter o caminho para o recurso que está sendo solicitado/acessado</li>
+                        <li>Quando passamos os parâmetros da requisição na URL, estamos fazendo uso do método GET. O que é super útil quando precisamos repetir a requisição com os mesmos parâmetros</li>
+                    </ul>
+                    <img src="./media/http-url.png" width="600px">
+                <br /><br />
+                <h3>Referências</h3><br />
+                <p>
+                    <a href="https://http.cat/">https://http.cat/</a><br />
+                    <a href="https://httpstatusdogs.com/">https://httpstatusdogs.com/</a><br />
+                    <a href=""></a><br />
+                    <a href=""></a><br />
+                </p>
+                
+            </main>
+
+            <aside>
+                <h3>Dúvidas</h3>
+                    <h5>E o P2P?</h5>
+                        <p>Você já usou torrent para baixar algum arquivo na internet? Caso sim, aproveitou um outro modelo de comunicação, o P2P ou Peer-To-Peer!</p>
+                        <p>O modelo Cliente-Servidor não é o único modelo de comunicação na rede, nem sempre o mais adequado. Por exemplo, imagine que precisemos contar as letras de 20 palavras. No caso do modelo Cliente-Servidor, quem fará esse trabalho é o servidor, certo? E se precisar contar as letras de 1 milhão de palavras? Muito trabalhoso para o servidor, não?</p>
+                        <p>O modelo Cliente-Servidor tenta centralizar o trabalho no servidor, mas isso também pode gerar gargalos. Se cada Cliente pudesse ajudar no trabalho, ou seja, assumir um pouco da responsabilidade do servidor, seria muito mais rápido. Essa é a ideia do P2P! Não há mais uma clara divisão entre Cliente-Servidor, cada cliente também é servidor e vice-versa!</p>  
+                        <p>Isto é útil quando você precisa distribuir um trabalho ou necessita baixar algo de vários lugares diferentes. Faz sentido?</p>  
+                        <p>Usando algum aplicativo de Torrent, o protocolo utilizado não é o HTTP, e sim o protocolo P2P, como BitTorrent ou Gnutella.</p>
+            </aside>
+        </div>
+        
+        <footer>
+            <button>
+                <a href="redes.html">Voltar</a>
+            </button>
+
+            <span class="link-sociais">
+                <a href="https://www.instagram.com/flaaaaaavis" target="_blank">
+                    <img class="sociais" src="media/instagram.png">Instagram
+                </a>
+                <a href="https://www.linkedin.com/in/ridailda/" target="_blank">
+                    <img class="sociais" src="media/linkedin.png">LinkedIn
+                </a>
+                <a href="https://github.com/flaaaaaavis" target="_blank">
+                    <img class="sociais" src="media/github.png">GitHub
+                </a>
+            </span>
+            
+        </footer>
+        
+    </body>
+</html>

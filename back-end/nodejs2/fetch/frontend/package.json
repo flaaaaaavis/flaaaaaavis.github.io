@@ -1,0 +1,12 @@
+{
+  "name": "fetch",
+  "version": "1.0.0",
+  "description": "",
+  "main": "front.js",
+  "scripts": {
+    "dev": "nodemon front.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

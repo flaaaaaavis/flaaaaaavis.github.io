@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="./styles/classes.css">
+
+        <title>Estudo de Classes</title>
+    </head>
+
+    <body>
+        <main>
+
+            <div></div>
+
+            <form>
+                <input type="number" placeholder="Operando 1" id="operand1" required>
+                <select name="" id="operation" required>
+                    <option value="+" selected>+</option>
+                    <option value="-">-</option>
+                    <option value="*">x</option>
+                    <option value="/">&divide;</option>
+                </select>
+                <input type="number" placeholder="Operando 2" id="operand2" required>
+                <button type="submit" onclick="calculadora.getResult()" id="calc">Calcular</button>
+            </form>
+            <button type="button" onclick="calculadora.clearCalculator()">Limpar</button>
+
+        </main>
+
+        <script src="./js/classes.js"></script>
+    </body>
+</html>
