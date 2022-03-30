@@ -1,0 +1,24 @@
+No seu monorepositorio, crie uma aplicacao nova, ela se chamara "Portifolio de Games", para isso:
+
+Frontend:
+    Crie uma pasta em frontend/src/ com o nome gamesmagazine
+    Nesta pasta, crie o conteudo do frontend (index.html, styles.css, script.js)
+
+    Esse frontend deve conter um formulario para cadastro dos jogos, e uma outra parte para exibir o catalogo contendo todos os jogos cadastrados.
+    Sirva o conteudo de src/gamesmagazine pelo express, em uma rota que esteja escutando em /games
+
+Backend:
+    Seu backend sera responsavel por consumir o arquivo gamesdatabase.json e alimenta-lo da mesma forma, utilizando o node-fs
+    NAO PODE USAR O WRITEJSON
+
+
+Modelo do objeto game:
+    {
+        id: "",
+        game: "",
+        year: "",
+        genre: "",
+        multiplayer: "",
+        offline: "",
+        crossplataform: ""
+    }

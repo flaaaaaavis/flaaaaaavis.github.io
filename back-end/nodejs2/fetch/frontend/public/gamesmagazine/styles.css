@@ -1,0 +1,69 @@
+* {
+    box-sizing: border-box;
+    outline: none;
+    margin: 0;
+    border: none;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+
+    border: 1px dashed red;
+
+    height: 10vh;
+    width: 100vw;
+    z-index: 1000;
+    position: fixed;
+}
+
+main {
+    min-height: 92vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#container {
+    max-height: 90vh;
+    padding-top: 60px;
+
+    visibility: visible;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: white;
+}
+
+#btn-cadastrar {
+    background-color: transparent;
+    color: white;
+}
+
+#modal {
+    width: 50vw;
+    height: 50vh;
+
+    color: white;
+    border: 1px dashed red;
+
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;    
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; 
+}
