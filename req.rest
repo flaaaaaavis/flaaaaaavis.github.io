@@ -1,0 +1,26 @@
+POST http://localhost:3000/login
+Content-type: application/json
+
+{
+    "email": "ridigad378@leafzie.com",
+    "password": "123456"
+}
+
+###
+
+POST http://localhost:3000/createAddress
+Content-type: application/json
+
+{
+    "cep": "ridigad378@leafzie.com",
+    "estado": "123456",
+    "cidade": "ridigad378@leafzie.com",
+    "bairro": "123456",
+    "logradouro": "ridigad378@leafzie.com",
+    "number": "123456"
+}
+
+
+### 
+
+GET http://localhost:3000/readAllProducts

@@ -25,6 +25,11 @@
     <div id="resultado"></div>
 
     <script>
+        const promise = new Promise((resolve, reject) => {
+            if(timeout > 3000) {
+                reject
+            }
+        })
         document.getElementById('botao').addEventListener('click', () => {
             fetch('http://localhost:3000/random-num')
                 .then(res => res.json())

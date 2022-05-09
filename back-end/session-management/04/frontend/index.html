@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./styles/style.css" />
+
+    <title>Hidden Inputs</title>
+  </head>
+  <body>
+    <h1 id="content" style="display: none">Bem vindo!!</h1>
+
+    <form id="sign-in">
+      <label for="email">Name</label>
+      <input type="email" id="registeredEmail" required/>
+      <br />
+      <label for="pass">Password</label>
+      <input type="password" id="registeredPass" required/>
+      <br />
+      <input type="button" value="Sign in" id="btn-signin" />
+      <br />
+      <p id="register-ancora-message" style="display: none">Create new account clicking <a id="register-ancora">here</a>.</p>
+    </form>
+
+    <form id="register" style="display: none">
+      <label for="email">Name</label>
+      <input type="email" id="email" required/>
+      <br />
+      <label for="pass">Password</label>
+      <input type="password" id="pass" required/>
+      <br />
+      <input type="button" value="Register" id="btn-register" />
+    </form>
+
+    <script src="scripts/script.js"></script>
+  </body>
+</html>
