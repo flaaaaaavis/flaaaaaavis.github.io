@@ -1,0 +1,17 @@
+POST http://localhost:3000/signIn
+Content-type: application/json
+
+{
+    "email": "ridigad378@leafzie.com",
+    "password": "123456"
+}
+
+###
+
+POST http://localhost:3000/register
+Content-type: application/json
+
+{
+    "email": "ridigad378@leafzie.com",
+    "password": "123456"
+}
