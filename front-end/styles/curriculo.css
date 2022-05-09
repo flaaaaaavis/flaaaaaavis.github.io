@@ -132,6 +132,7 @@ main h2 {
 
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-evenly;
 }
 
@@ -188,7 +189,7 @@ a:hover {
     text-align: center;
     padding: 5px 0;
     border-radius: 6px;
-  
+
     /* Position the tooltip text - see examples below! */
     position: absolute;
     z-index: 1;
@@ -213,7 +214,7 @@ a:hover {
     background-color: #E69197;
     width: 15px;
     height: 1200px;
-    top: 20px;  
+    top: 20px;
 }
 
 #square {
@@ -230,7 +231,7 @@ footer {
     width: 900px;
     height: 50px;
     background-color: #E69197;
-    
+
     display: flex;
     flex-direction: row;
     justify-content: space-around;
