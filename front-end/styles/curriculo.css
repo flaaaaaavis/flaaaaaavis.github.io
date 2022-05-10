@@ -128,12 +128,15 @@ main h2 {
 }
 
 #professional {
-  max-width: 100%;
+  max-width: 90%;
+  margin-left: 4%;
+  align-self: center;
 
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  align-content: space-evenly;
 }
 
 .prof {
