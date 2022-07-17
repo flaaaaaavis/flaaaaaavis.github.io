@@ -148,12 +148,15 @@ main h2 {
 }
 
 aside h2 {
+	margin-top: 10px;
   color: #E69197;
+  font-size: x-large;
 }
 
 aside h4 {
   font-weight: 400;
-  margin-left: 30px;
+  margin-top: 10px;
+  margin-left: 20px;
 }
 
 #profile-box img {
@@ -164,7 +167,7 @@ aside h4 {
 }
 
 #contacts a {
-  margin-left: 30px;
+  margin-left: 20px;
 }
 
 aside div input {

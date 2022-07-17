@@ -28,46 +28,62 @@
             <main>
                 <h1>CSS Selectors</h1>
                 <hr>
-                <br />
 
-                <h2 id="identificador">Id</h2>
+				<h2>Cascade</h2>
+					<p>"When two rules apply that have equal specificity, the one that comes last in the CSS is the one that will be used."</p>
+				<h2>Specificity</h2>
+					<p>
+						Every CSS selector has its place in the specificity hierarchy.
+						<br />
+						There are four categories which define the specificity level of a selector:
+					</p>
+					<ol>
+						<li>Inline styles</li>
+						<li>IDs</li>
+						<li>Classes, pseudo-classes, attribute selectors</li>
+						<li>Elements and pseudo-elements</li>
+					</ol>
+				<h2>Inheritance</h2>
+					<p>"Some CSS property values set on parent elements are inherited by their child elements, and some aren't."</p>
+
+                <h3 id="identificador">Id</h3>
                 <p></p>
                 <br />
 
-                <h2 class="exemplo">Class</h2>
+                <h3 class="exemplo">Class</h3>
                 <p></p>
                 <br />
 
-                <h2 class="atributo">Seletor Atributo</h2>
+                <h3 class="atributo">Seletor Atributo</h3>
                 <p>Permite a seleção de um elemento com base na presença de um atributo, ou em várias correspondências diferentes com o valor do atributo.</p>
                 <br />
 
-                <h2 class="atributo">Pseudo-classe</h2>
+                <h3 class="atributo">Pseudo-classe</h3>
                 <p>Uma pseudo-classe é um seletor que seleciona elementos que estão em um estado específico, por exemplo, eles são o primeiro elemento de seu tipo ou estão sendo passados ​​pelo ponteiro do mouse. Eles tendem a agir como se você tivesse aplicado uma classe a alguma parte do seu documento, geralmente ajudando a reduzir o excesso de classes em sua marcação e fornecendo um código mais flexível e sustentável.</p>
                 <p>Todas as pseudoclasses se comportam da mesma maneira. Eles têm como alvo uma parte do seu documento que está em um determinado estado, comportando-se como se você tivesse adicionado uma classe ao seu HTML.</p>
                 <br />
 
-                <h2 class="atributo">Pseudo-elemento</h2>
+                <h3 class="atributo">Pseudo-elemento</h3>
                 <p>Agem como se você tivesse adicionado um novo elemento HTML inteiro à marcação, em vez de aplicar uma classe aos elementos existentes. Por exemplo, se você quiser selecionar a primeira linha de um parágrafo, poderá envolvê-la em um elemento span e usar um seletor de elemento; entretanto, isso falharia se o número de palavras que você empacotou fosse maior ou menor do que a largura do elemento pai. Como tendemos a não saber quantas palavras caberão em uma linha - já que isso vai mudar se a largura da tela ou o tamanho da fonte mudar - é impossível fazer isso de forma robusta adicionando HTML.</p>
                 <br />
 
-                <h2 class="atributo">Combinators</h2>
+                <h3 class="atributo">Combinators</h3>
                 <p>Combina outros seletores de uma forma que forneça uma relação útil entre eles e a localização do conteúdo no documento.</p>
 
                 <br /><br />
-                <h2>Referências</h2><br />
+                <h3>Referências</h3><br />
                     <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors">https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors</a><br />
                     <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Type_Class_and_ID_Selectors">https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Type_Class_and_ID_Selectors</a><br />
                     <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Attribute_selectors">https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Attribute_selectors</a><br />
                     <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Pseudo-classes_and_pseudo-elements">https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Pseudo-classes_and_pseudo-elements</a><br />
                     <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Combinators">https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Combinators</a><br /><br />
             </main>
-            
+
             <aside>
                 <h3>Dúvidas</h3>
             </aside>
         </div>
-        
+
         <footer>
             <button>
                 <a href="css.html">Voltar</a>
@@ -83,7 +99,7 @@
                     <img class="sociais" src="media/github.png">GitHub
                 </a>
             </span>
-            
+
         </footer>
 
     </body>
