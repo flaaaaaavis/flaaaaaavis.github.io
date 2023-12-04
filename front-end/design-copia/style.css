@@ -108,6 +108,7 @@ aside div {
     align-items: center;
 
     background-color: rgb(255, 255, 255);
+	color: black;
     box-shadow: 0 0 3px 0 hsl(0deg 1% 71% / 50%);
 }
 
